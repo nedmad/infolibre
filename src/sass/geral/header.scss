@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+html,
+body {
+    padding: 0;
+    background-color: $colo-second;
+}
+
+header {
+    width: 100%;
+
+    #navbarNavDropdown {
+        justify-content: end;
+        padding: 0 50px;
+        color: rgb(21, 21, 20) !important;
+    
+    }
+    
+    .logo {
+        height: 60px;
+    }
+
+    img {
+        position: absolute;
+        width: 100px;
+        border-radius: 70px;
+    }
+
+}
+

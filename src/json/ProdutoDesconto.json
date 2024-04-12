@@ -1,0 +1,63 @@
+[
+    {
+        "id": 4,
+        "nome":"Iphone 14",
+        "preco":"8.344,21",
+        "tipo":"produto",
+        "img":"https://mlstaticquic-a.akamaihd.net/celular-caterpillar-cat-s40-4g-lte-47-ips-16gb-dualsim-amv-D_NQ_NP_874198-MLU31370068631_072019-F.jpg",
+        "descricao":"descricao",
+        "conteudo":"sdsad a da da da dad asdds",
+        "desc":"100,90",
+        "link":"",
+        "sobre": "desconto",
+        "porcent":"39%"
+    },
+    
+    {
+        "id": 5,
+        "nome":"Iphone 14",
+        "preco":"8.344,21",
+        "tipo":"produto",
+        "img":"https://i5.walmartimages.com.mx/mg/gm/3pp/asr/c1078726-98c2-447e-be54-8d79f975d6e9.269205dbedbfaa30ff50c6670eb82931.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff",
+        "descricao":"descricao",
+        "conteudo":"sdsad a da da da dad asdds",
+        "desc":"200,90",
+        "link":"",
+        "sobre": "desconto",
+        "porcent":"20%"
+
+
+    },
+    
+    {
+        "id": 6,
+        "nome":"emorroida",
+        "preco":"600,90",
+        "tipo":"suplemento",
+        "img":"../../public/images/lift_detox_10_unidades.png",
+        "descricao":"emorroida, leve 10 no valor de 1",
+        "conteudo":"sdsad a da da da dad asdds",
+        "desc":"500,90",
+        "link":"",
+        "sobre": "desconto",
+        "porcent":"19%"
+
+
+
+    },
+    {
+        "id": 7,
+        "nome":"pedro gay",
+        "preco":"0,90",
+        "tipo":"suplemento",
+        "img":"../../public/images/lift_detox_principal.webp",
+        "descricao":"leve 3 no preco de 1",
+        "conteudo":"sdsad a da da da dad asdds",
+        "desc":"100,50",
+        "link":"https://ev.braip.com/ref?pl=plagjyq8&ck=chew8wl8&af=afiydz1xz2 ",
+        "sobre": "desconto",
+        "porcent":"39%"
+
+
+    }
+]

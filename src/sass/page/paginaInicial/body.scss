@@ -1,0 +1,142 @@
+
+//estyle bodi
+.corpo {
+
+    background-color: $color-primary;
+    color: $colo-second;
+    text-align: center;
+    padding: 250px 30px;
+
+    h1{
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+    
+    
+    .but{
+        margin: 60px 0;
+    }
+
+}
+
+//style BodyInfo
+
+.bodyInfo{
+    .cartaz {
+        max-width: 1000px;
+        position: relative;
+        top: -50px;
+        text-align: center;
+
+
+        .cartaz2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .cartazBloco1,
+        .cartazBloco2 {
+            color: $colo-second;
+            padding: 40px;
+            box-shadow: 4px 4px 20px black;
+            text-align: left;
+        
+        
+        }
+
+        .cartazBloco1 {
+            background-color: $colo-second;
+            border-radius: 10px 0px 0px 10px;
+            color: black;
+        
+        }
+        
+        .cartazBloco2 {
+            background-color: $color-primary;
+            border-radius: 0 10px 10px 0;
+
+            img {
+                width: 60px;
+            }
+            
+             li {
+                margin-top: 20px;
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+            
+             
+        
+        }
+    
+    }
+    
+    
+ 
+    
+ 
+    
+  
+    
+    .comoTrabalhamos {
+        text-align: center;
+        padding: 0 30px;
+
+         p{
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        h1{
+            max-width: 1200px;
+            margin: 20px auto;
+            color: $color-primary;
+        
+        }
+    }
+    
+    
+    .infoCarts {
+        margin-top: 120px;
+        margin-bottom: 260px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 50px 0;
+
+       
+        .cart1,
+        .cart2 {
+            width: 100%;
+            max-width: 530px;
+            background-color: white;
+            color: $color-primary;
+            border-radius: 10px;
+            padding: 30px 40px 100px 40px;
+            box-shadow: 4px 4px 40px black;
+            margin: 0 auto;
+            p{
+                font-size: 20px;
+                margin-top: 20px;
+            }
+        
+        }
+        
+        .cart1{
+            h3{
+                margin-top: 30px;
+            }
+            img {
+                margin-top: 50px;
+            }
+        }
+
+        
+    }
+    
+    
+}
+
+

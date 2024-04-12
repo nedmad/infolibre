@@ -1,0 +1,55 @@
+
+footer {
+    padding: 30px;
+    background-color: $colo-second;
+    color: $colo-second;
+
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 60px 300px;
+        padding: 0 30px;
+
+        //tags
+        .tags{
+            min-width: 240px;
+            display:grid;
+            grid-column: 1fr;
+            justify-content: center;
+        }
+
+        .redesSocias{
+            text-align: center;
+            
+            .imagensRede{
+                display: flex;
+                gap: 30px;
+                margin-top: 20px;
+                justify-content: center;
+
+                a{
+
+                    img{
+                        max-width: 60px;
+                        max-height: 60px;
+                    }
+                }
+
+               
+
+            }
+        }
+    }
+    
+    .creditos {
+        padding: 30px 0;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+
+}
+
+

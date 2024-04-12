@@ -1,0 +1,20 @@
+//cores principais
+@import "./variaveis-color.scss";
+
+
+//parte geral da pagina
+@import "./geral/header.scss";
+@import "./geral/footer.scss";
+//pagina inicial
+@import "./page/paginaInicial/body.scss";
+
+//pagina de todos os produtos
+@import "./produtos/produtosNoGeral.scss";
+
+//pagina do produto
+@import "./produtos/produto.scss";
+
+//footer
+@import "./geral/footer.scss";
+//responsivo
+@import "./responsivo.scss";
