@@ -70,7 +70,8 @@ footer .creditos {
   background-color: rgb(47, 0, 255);
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 250px 30px 400px 30px;
+  padding: 100px 30px;
+  min-height: 500px;
 }
 .corpo h1 {
   max-width: 1200px;
