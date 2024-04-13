@@ -72,6 +72,7 @@ footer .creditos {
   text-align: center;
   padding: 100px 30px;
   min-height: 500px;
+  min-width: 300px;
 }
 .corpo h1 {
   max-width: 1200px;
@@ -97,6 +98,7 @@ footer .creditos {
   padding: 40px;
   box-shadow: 4px 4px 20px black;
   text-align: left;
+  min-height: 300px;
 }
 .bodyInfo .cartaz .cartazBloco1 {
   background-color: rgb(255, 255, 255);
@@ -383,17 +385,26 @@ footer .creditos {
   }
 }
 @media screen and (max-width: 562px) {
+  .cartPai {
+    width: 100% !important;
+    padding: 0px 0px !important;
+  }
+  .cartPai .cart {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+  }
   .cartaz2 {
-    display: block;
+    display: block !important;
   }
   .cartazBloco1 {
     background-color: rgb(47, 0, 255);
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px !important;
     color: black;
   }
   .cartazBloco2 {
     background-color: rgb(47, 0, 255);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 10px 10px !important;
   }
   .ProdutosMePro {
     grid-template-columns: 1fr !important;
