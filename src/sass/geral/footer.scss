@@ -14,10 +14,21 @@ footer {
 
         //tags
         .tags{
-            min-width: 240px;
-            display:grid;
-            grid-column: 1fr;
-            justify-content: center;
+            span{
+                min-width: 240px;
+                display:grid;
+                grid-column: 1fr;
+                justify-content: center;
+                gap: 20px 0px;
+                
+                a{
+                    text-decoration: none;
+                    color: $colo-second;
+                    &:hover{
+                        color: rgb(192, 203, 212);
+                    }
+                }
+            }
         }
 
         .redesSocias{

@@ -85,7 +85,9 @@ export default function PageProduto() {
                 <p>Entrega GRÁTIS: 11 - 17 de Abril</p>
                 <p>Em estoque</p>
               </div>
-              <Link to={conteudoPage[0].link}>
+              <Link to={conteudoPage[0].link}
+              target="_blank"
+              >
                 <button className="btn btn-success ">Ir para compra</button>
               </Link>
             </div>

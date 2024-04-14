@@ -134,6 +134,17 @@
 
 
         }
+        .cart1{
+           
+            .imagemsCart{
+                grid-template-columns: 1fr !important;
+                justify-content: center;
+                
+                img {
+                    max-width: 60px !important;
+                }
+            }
+        }
 
         .content {
             display: inline-block;
@@ -153,11 +164,9 @@
 
         }
 
-        .cart1 img {
-            max-width: 200px;
+       
 
-
-        }
+     
 
         .content {
             display: inline-block;

@@ -1,21 +1,37 @@
-import {useLocation, Link} from "react-router-dom";
-
+import { useLocation, Link } from "react-router-dom";
 
 export default function Rodape() {
-  const {pathname} = useLocation();
-  const url = pathname.split("/")
-  const color = url[1] == "mercadorias"?"white":"rgb(47, 0, 255)";
-  const color1 = url[1] == "mercadorias"?"rgb(47, 0, 255)":"white";
+  const { pathname } = useLocation();
+  const url = pathname.split("/");
+  const color = url[1] == "mercadorias" ? "white" : "rgb(47, 0, 255)";
+  const color1 = url[1] == "mercadorias" ? "rgb(47, 0, 255)" : "white";
   return (
     <>
-      <footer id="rodape" style={{backgroundColor: `${color}`, color: `${color1}`}}>
-        <div className="content" >
+      <footer
+        id="rodape"
+        style={{ backgroundColor: `${color}`, color: `${color1}` }}
+      >
+        <div className="content">
           <div className="tags">
-            <strong>Sobre</strong>
-            <p>remedios ds dsds dsds d</p>
-            <p>suplementos sdsdsddsdsdsd</p>
-            <p>produtos sddsdsdsdsd</p>
-            <p>info sdsdsdsd</p>
+            <span>
+            <h5>Termos</h5>
+            <Link to={"/formas-pagamento"}>
+              <strong>Formas de Pagamentos</strong>
+            </Link>
+
+
+            <Link to={"/compra-devolução"}>
+              <strong>Compra e Devolução</strong>
+            </Link>
+
+            <Link to={"/termos-consentimento"}>
+              <strong>Termos de Consentimento</strong>
+            </Link>
+
+          
+
+            
+            </span>
           </div>
           <div className="redesSocias">
             <strong>Siga-nos em nossas redes socias</strong>
@@ -34,11 +50,10 @@ export default function Rodape() {
               </Link>
             </div>
           </div>
-         </div>
+        </div>
         <div className="creditos">
-          <hr />
-          © 2023 Monetizze Impulsionadora de Vendas Online - 23.055.665/0001-06.
-          Belo Horizonte - MG.
+          <hr />© 2023 Monetizze Impulsionadora de Vendas Online -
+          23.055.665/0001-06. Belo Horizonte - MG.
         </div>
       </footer>
     </>

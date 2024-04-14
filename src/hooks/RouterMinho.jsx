@@ -7,6 +7,9 @@ import Inforodutos from "../components/Infoproduto";
 import Suplementos from "../components/Suplementos";
 import PaginaInicialProdutos from "../components/PaginaInicialProdutos";
 import PageProduto from "../objects/PageProduto";
+import CompraDe from "../components/politicas/CompraDe";
+import Consentimento from "../components/politicas/Consentimento";
+import FormaPagamento from "../components/politicas/FormaPagamento";
 
 export const RouterMinho = createBrowserRouter([
   {
@@ -16,6 +19,18 @@ export const RouterMinho = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path:"/compra-devolução",
+        element:<CompraDe/>
+      },
+      {
+        path: "/termos-consentimento",
+        element:<Consentimento/>
+      },
+      {
+        path: "/formas-pagamento",
+        element:<FormaPagamento/>
       },
       {
         path: "/mercadorias",

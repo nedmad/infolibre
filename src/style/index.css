@@ -41,11 +41,19 @@ footer .content {
   gap: 60px 300px;
   padding: 0 30px;
 }
-footer .content .tags {
+footer .content .tags span {
   min-width: 240px;
   display: grid;
   grid-column: 1fr;
   justify-content: center;
+  gap: 20px 0px;
+}
+footer .content .tags span a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+footer .content .tags span a:hover {
+  color: rgb(192, 203, 212);
 }
 footer .content .redesSocias {
   text-align: center;
@@ -67,12 +75,20 @@ footer .creditos {
 }
 
 .corpo {
-  background-color: rgb(47, 0, 255);
+  background-image: url(../../../../public/images/fundo.png);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   color: rgb(255, 255, 255);
   text-align: center;
-  padding: 100px 30px;
   min-height: 500px;
   min-width: 300px;
+}
+.corpo .filtro {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 0, 255, 0.676);
+  padding: 160px 30px;
 }
 .corpo h1 {
   max-width: 1200px;
@@ -156,11 +172,20 @@ footer .creditos {
   font-size: 20px;
   margin-top: 20px;
 }
+.bodyInfo .infoCarts .cart1 {
+  text-align: center;
+}
 .bodyInfo .infoCarts .cart1 h3 {
   margin-top: 30px;
 }
-.bodyInfo .infoCarts .cart1 img {
-  margin-top: 50px;
+.bodyInfo .infoCarts .cart1 .imagemsCart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.bodyInfo .infoCarts .cart1 .imagemsCart img {
+  width: 100%;
+  margin: 50px auto 0px auto;
+  max-width: 80px;
 }
 
 /*-------------------------------------Todos os Produtos*/
@@ -298,11 +323,19 @@ footer .content {
   gap: 60px 300px;
   padding: 0 30px;
 }
-footer .content .tags {
+footer .content .tags span {
   min-width: 240px;
   display: grid;
   grid-column: 1fr;
   justify-content: center;
+  gap: 20px 0px;
+}
+footer .content .tags span a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+footer .content .tags span a:hover {
+  color: rgb(192, 203, 212);
 }
 footer .content .redesSocias {
   text-align: center;
@@ -420,6 +453,13 @@ footer .creditos {
   .cart2 {
     padding: 10px 10px 240px 10px;
   }
+  .cart1 .imagemsCart {
+    grid-template-columns: 1fr !important;
+    justify-content: center;
+  }
+  .cart1 .imagemsCart img {
+    max-width: 60px !important;
+  }
   .content {
     display: inline-block;
   }
@@ -432,9 +472,6 @@ footer .creditos {
   .cart2 {
     max-width: 300px;
   }
-  .cart1 img {
-    max-width: 200px;
-  }
   .content {
     display: inline-block;
   }
@@ -443,6 +480,11 @@ footer .creditos {
   .corpo {
     height: 70vh;
   }
+}
+.termos {
+  background-color: rgb(47, 0, 255);
+  color: rgb(255, 255, 255);
+  padding: 70px 0;
 }
 
 /*# sourceMappingURL=index.css.map */

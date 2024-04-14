@@ -65,11 +65,13 @@ export default function Body2() {
         <div className="container-fluid infoCarts">
           <div data-aos="flip-left" className="cart1">
             <h3>
-              <strong>
-                Formas de pagamentos
-              </strong>
+              <strong>Formas de pagamentos</strong>
             </h3>
-            <img src="../../public/images/pagamento.svg" alt="" />
+            <div className="imagemsCart">
+              <img src="../../public/images/pagamento/boleto.png" alt="" />
+              <img src="../../public/images/pagamento/pix.png" alt="" />
+              <img src="../../public/images/pagamento/cartao.png" alt="" />
+            </div>
           </div>
 
           <div data-aos="flip-right" className="cart2">
