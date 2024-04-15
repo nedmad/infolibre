@@ -290,6 +290,7 @@ footer .creditos {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .tagsI:hover {

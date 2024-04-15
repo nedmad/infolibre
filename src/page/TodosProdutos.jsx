@@ -10,25 +10,25 @@ export default function TodosProdutos() {
           to={"/mercadorias/todosProdutos"}
           className={pathname == "/mercadorias/todosProdutos" ? "selecionado" : ""}
         >
-          <strong>todos</strong>
+          <strong>Todos</strong>
         </Link>
         <Link
           to={"/mercadorias/produto"}
           className={pathname == "/mercadorias/produto" ? "selecionado" : ""}
         >
-          <strong>produto</strong>
+          <strong>Produtos</strong>
         </Link>
         <Link
           to={"/mercadorias/infoproduto"}
           className={pathname == "/mercadorias/infoproduto" ? "selecionado" : ""}
         >
-          <strong>inproduto</strong>
+          <strong>Infoprodutos</strong>
         </Link>
         <Link
           to={"/mercadorias/suplementos"}
           className={pathname == "/mercadorias/suplementos" ? "selecionado" : ""}
         >
-          <strong>Suplementos</strong>
+          <strong>Saúde</strong>
         </Link>
       </div>
       <div className="conteudoFundo">

@@ -1,29 +1,19 @@
 [
     {
         "id": 1,
-        "nome":"Iphone 14",
-        "preco":"8.344,21",
-        "tipo":"produto",
-        "img":"../../public/images/celular.jpg",
-        "descricao":"descricao",
-        "conteudo":"sdsad a da da da dad asdds",
-        "link":""
+        "nome":"Rosa Amazônica",
+        "preco":"197,00",
+        "tipo":"saude",
+        "img":"../../public/images/produtos-femininos/rosa-amazonica.webp",
+        "descricao":"1 pote",
+        "conteudo":"1 pote",
+        "link":"https://ev.braip.com/ref?pl=plazl6do&ck=chezlmgr&af=afi4vy6870"
     },
     {
         "id": 2,
-        "nome":"Iphone 19",
-        "preco":"8.344,21",
-        "tipo":"produto",
-        "img":"http://www.extra-imagens.com.br/TelefoneseCelulares/Smartphones/Android/1931301/7844160/Celular-Desbloqueado-CCE-Mobi-SM70-Preto-com-Dual-Chip-Tela-4-3-Android-4-0-Camera-5MP-3G-Wi-Fi-Bluetooth-MP3FM-GPS-Fone-e-Cartao-4GB-1931301.jpg",
-        "descricao":"descricao",
-        "conteudo":"sdsad a da da da dad asdds",
-        "link":""
-    },
-    {
-        "id": 3,
-        "nome":"emorroida",
+        "nome":"Life Detox",
         "preco":"60,90",
-        "tipo":"suplemento",
+        "tipo":"saude",
         "img":"../../public/images/lift_detox_principal.webp",
         "img1":["../../public/images/lift_detox_1_unidade.webp","../../public/images/lift_detox_2_unidaades.jpg"],
         "descricao":"descricao",

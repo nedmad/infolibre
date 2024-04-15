@@ -26,13 +26,11 @@ export default function Carts({ produto }) {
                 ></div>
                 <div className="cart-body">
                   <h5 className="cart-text">{val.nome}</h5>
-                  <h3>R$ {val.desc ? val.desc : val.preco}</h3>
+                  <h3>R$ { val.preco}</h3>
                   <span className="desconto">
-                    {val.desc ? val.porcent + " de desconto" : ""}
+                    {val.desc ? val.desc + " de desconto" : ""}
                   </span>
-                  <p>
-                    R$<del>{val.preco}</del>
-                  </p>
+                
                   <p>{val.descricao}</p>
                 </div>
               </div>

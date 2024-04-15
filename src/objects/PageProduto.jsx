@@ -69,12 +69,8 @@ export default function PageProduto() {
 
             <h1>{conteudoPage[0].nome}</h1>
             <div className="texto">
-              <p>{conteudoPage[0].conteudo}</p> <hr />
-              <div className="demaisInfo">
-                <span>indioma portugues</span>
-                <span>380 paginas</span>
-                <span>idade minima de 12 anos</span>
-              </div>
+            <hr />
+              <p>{conteudoPage[0].conteudo}</p>
             </div>
           </div>
           <div className="pagamento">

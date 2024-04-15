@@ -81,7 +81,7 @@ export default function Heade() {
                     </li>
                     <li>
                       <Link to={"/mercadorias/suplementos"} className="dropdown-item" href="#">
-                        <strong>Suplementos</strong>
+                        <strong>Saúde</strong>
                       </Link>
                     </li>
                   
