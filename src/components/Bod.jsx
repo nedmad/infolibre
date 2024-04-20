@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import ImgFundo from "/infolibre/public/images/fundo.png";
 
 export default function Bod() {
   return (
     <>
-      <div className="corpo">
+      <div className="corpo" style={{backgroundImage: `url(${ImgFundo}`}}>
         <div className="filtro">
           <div>
             <h1>
