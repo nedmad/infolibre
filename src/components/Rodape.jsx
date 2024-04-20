@@ -1,15 +1,19 @@
+import { useContext } from "react";
 import { useLocation, Link } from "react-router-dom";
+import { Context } from "../hooks/CreateItens";
 
 export default function Rodape() {
   const { pathname } = useLocation();
   const url = pathname.split("/");
   const color = url[1] == "mercadorias" ? "white" : "rgb(47, 0, 255)";
   const color1 = url[1] == "mercadorias" ? "rgb(47, 0, 255)" : "white";
+  const {rodapeRef} = useContext(Context);
   return (
     <>
       <footer
         id="rodape"
         style={{ backgroundColor: `${color}`, color: `${color1}` }}
+        ref={rodapeRef}
       >
         <div className="content">
           <div className="tags">

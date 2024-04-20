@@ -1,4 +1,9 @@
+import { useContext, useRef } from "react";
+import { Context } from "../hooks/CreateItens";
+
 export default function Body2() {
+  const {sobreRef} = useContext(Context);
+  
   return (
     <>
       <div className="bodyInfo">
@@ -32,6 +37,7 @@ export default function Body2() {
           data-aos="zoom-in-down"
           className="comoTrabalhamos"
           id="comoTrabalhamos"
+          ref={sobreRef}
         >
           <h1>Como trabalhamos</h1>
           <p>

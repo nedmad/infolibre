@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../hooks/CreateItens";
 
 export default function Heade() {
+  const {scroll,scroll2} = useContext(Context)
+
+
   return (
     <>
       <header>
@@ -49,12 +54,12 @@ export default function Heade() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#comoTrabalhamos">
+                  <a className="nav-link" href="#" onClick={scroll}>
                     <strong>Sobre nós</strong>
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#rodape">
+                  <a className="nav-link" href="#" onClick={scroll2}>
                     <strong>Contato</strong>
                   </a>
                 </li>
@@ -92,6 +97,7 @@ export default function Heade() {
           </div>
         </nav>
       </header>
+
     </>
   );
 }

@@ -1,12 +1,13 @@
 import { RouterProvider } from "react-router-dom";
 import { RouterMinho } from "./hooks/RouterMinho";
+import CreateItens from "./hooks/CreateItens";
 
-export default function App(){
-  return(
+export default function App() {
+  return (
     <>
-  
-    <RouterProvider router={RouterMinho}/>
-
+      <CreateItens>
+        <RouterProvider router={RouterMinho} />
+      </CreateItens>
     </>
-  )
+  );
 }
