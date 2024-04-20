@@ -25,16 +25,16 @@ export default function Rodape() {
           <div className="tags">
             <span>
             <h5>Termos</h5>
-            <Link to={"/formas-pagamento"}>
+            <Link to={"/formas-pagamento"} style={{color:color1}}>
               <strong>Formas de Pagamentos</strong>
             </Link>
 
 
-            <Link to={"/compra-devolução"}>
+            <Link to={"/compra-devolução"} style={{color:color1}}>
               <strong>Compra e Devolução</strong>
             </Link>
 
-            <Link to={"/termos-consentimento"}>
+            <Link to={"/termos-consentimento"} style={{color:color1}}>
               <strong>Termos de Consentimento</strong>
             </Link>
 

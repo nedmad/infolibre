@@ -5,6 +5,7 @@ import logo from "../../public/images/infolibre_logo_insta.png"
 
 export default function Heade() {
   const {scroll, scroll2} = useContext(Context)
+
   return (
     <>
       <header>
@@ -18,6 +19,7 @@ export default function Heade() {
                 />
               </Link>
               <button
+                
                 className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
