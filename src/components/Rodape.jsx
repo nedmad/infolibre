@@ -1,6 +1,10 @@
 import { useContext } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Context } from "../hooks/CreateItens";
+import instagram from "../../public/images/instagram.png"
+import facebook from "../../public/images/facebook.png"
+import zap from "../../public/images/zap.png"
+import tiktok from "../../public/images/tiktok.png"
 
 export default function Rodape() {
   const { pathname } = useLocation();
@@ -43,16 +47,16 @@ export default function Rodape() {
             <strong>Siga-nos em nossas redes socias</strong>
             <div className="imagensRede">
               <Link to={""}>
-                <img src="/infolibre/public/images/instagram.png" alt="" />
+                <img src={instagram} alt="" />
               </Link>
               <Link to={""}>
-                <img src="/infolibre/public/images/facebook.png" alt="" />
+                <img src={facebook} alt="" />
               </Link>
               <Link to={""}>
-                <img src="/infolibre/public/images/zap.png" alt="" />
+                <img src={zap}alt="" />
               </Link>
               <Link to={""}>
-                <img src="/infolibre/public/images/tiktok.png" alt="" />
+                <img src={tiktok} alt="" />
               </Link>
             </div>
           </div>

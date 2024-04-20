@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../hooks/CreateItens";
+import logo from "../../public/images/infolibre_logo_insta.png"
 
 export default function Heade() {
   const {scroll, scroll2} = useContext(Context)
@@ -12,7 +13,7 @@ export default function Heade() {
             
               <Link to={"/"} className="navbar-brand logo" href="#">
                 <img
-                  src="/infolibre/public/images/infolibre_logo_insta.png"
+                  src={logo}
                   alt=""
                 />
               </Link>

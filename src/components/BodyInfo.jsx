@@ -1,6 +1,13 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { Context } from "../hooks/CreateItens";
-
+//tags sobre nossos produtos
+import infoproduto from  "../../public/images/abra-o-livro.png"
+import suplemento from  "../../public/images/suplemento.png"
+import produto from  "../../public/images/produtos.png"
+//pagamento
+import boleto from "../../public/images/pagamento/boleto.png";
+import pix from "../../public/images/pagamento/pix.png";
+import cartao from "../../public/images/pagamento/cartao.png";
 export default function Body2() {
   const {sobreRef} = useContext(Context);
   return (
@@ -17,15 +24,15 @@ export default function Body2() {
             <div className="cartazBloco2 ">
               <ul>
                 <li>
-                  <img src="/infolibre/public/images/abra-o-livro.png" alt="" />
+                  <img src={infoproduto} alt="" />
                   <span>Infoprodutos</span>
                 </li>
                 <li>
-                  <img src="/infolibre/public/images/suplemento.png" alt="" />
+                  <img src={suplemento} alt="" />
                   <span>Suplementos</span>
                 </li>
                 <li>
-                  <img src="/infolibre/public/images/produtos.png" alt="" />
+                  <img src={produto} alt="" />
                   <span>Produtos</span>
                 </li>
               </ul>
@@ -74,9 +81,9 @@ export default function Body2() {
               <strong>Formas de pagamentos</strong>
             </h3>
             <div className="imagemsCart">
-              <img src="/infolibre/public/images/pagamento/boleto.png" alt="" />
-              <img src="/infolibre/public/images/pagamento/pix.png" alt="" />
-              <img src="/infolibre/public/images/pagamento/cartao.png" alt="" />
+              <img src={boleto} alt="" />
+              <img src={pix} alt="" />
+              <img src={cartao} alt="" />
             </div>
           </div>
 
