@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import TodosProdutos from "../page/TodosProdutos";
 import Home from "../page/Home";
 import PaginaTotal from "../page/PaginaTotal";
@@ -11,7 +11,7 @@ import CompraDe from "../components/politicas/CompraDe";
 import Consentimento from "../components/politicas/Consentimento";
 import FormaPagamento from "../components/politicas/FormaPagamento";
 
-export const RouterMinho = createBrowserRouter([
+export const RouterMinho = createHashRouter([
   {
     path: "/",
     element: <PaginaTotal />,
