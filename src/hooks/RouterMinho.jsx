@@ -12,7 +12,6 @@ import Consentimento from "../components/politicas/Consentimento";
 import FormaPagamento from "../components/politicas/FormaPagamento";
 
 export const RouterMinho = createHashRouter([
-  //novo router
   {
     path: "/",
     element: <PaginaTotal />,
