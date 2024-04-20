@@ -3,7 +3,6 @@ import { Context } from "../hooks/CreateItens";
 
 export default function Body2() {
   const {sobreRef} = useContext(Context);
-  
   return (
     <>
       <div className="bodyInfo">
@@ -18,15 +17,15 @@ export default function Body2() {
             <div className="cartazBloco2 ">
               <ul>
                 <li>
-                  <img src="../../public/images/abra-o-livro.png" alt="" />
+                  <img src="/infolibre/public/images/abra-o-livro.png" alt="" />
                   <span>Infoprodutos</span>
                 </li>
                 <li>
-                  <img src="../../public/images/suplemento.png" alt="" />
+                  <img src="/infolibre/public/images/suplemento.png" alt="" />
                   <span>Suplementos</span>
                 </li>
                 <li>
-                  <img src="../../public/images/produtos.png" alt="" />
+                  <img src="/infolibre/public/images/produtos.png" alt="" />
                   <span>Produtos</span>
                 </li>
               </ul>
@@ -34,10 +33,11 @@ export default function Body2() {
           </div>
         </div>
         <div
+          ref={sobreRef}
           data-aos="zoom-in-down"
           className="comoTrabalhamos"
           id="comoTrabalhamos"
-          ref={sobreRef}
+       
         >
           <h1>Como trabalhamos</h1>
           <p>
@@ -74,9 +74,9 @@ export default function Body2() {
               <strong>Formas de pagamentos</strong>
             </h3>
             <div className="imagemsCart">
-              <img src="../../public/images/pagamento/boleto.png" alt="" />
-              <img src="../../public/images/pagamento/pix.png" alt="" />
-              <img src="../../public/images/pagamento/cartao.png" alt="" />
+              <img src="/infolibre/public/images/pagamento/boleto.png" alt="" />
+              <img src="/infolibre/public/images/pagamento/pix.png" alt="" />
+              <img src="/infolibre/public/images/pagamento/cartao.png" alt="" />
             </div>
           </div>
 

@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../hooks/CreateItens";
 
 export default function Heade() {
-  const {scroll,scroll2} = useContext(Context)
-
-
+  const {scroll, scroll2} = useContext(Context)
   return (
     <>
       <header>
@@ -14,7 +12,7 @@ export default function Heade() {
             
               <Link to={"/"} className="navbar-brand logo" href="#">
                 <img
-                  src="../../public/images/infolibre_logo_insta.png"
+                  src="/infolibre/public/images/infolibre_logo_insta.png"
                   alt=""
                 />
               </Link>
@@ -97,7 +95,6 @@ export default function Heade() {
           </div>
         </nav>
       </header>
-
     </>
   );
 }

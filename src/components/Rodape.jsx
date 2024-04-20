@@ -5,15 +5,17 @@ import { Context } from "../hooks/CreateItens";
 export default function Rodape() {
   const { pathname } = useLocation();
   const url = pathname.split("/");
+  //Se estiver no diretorio mercadoria, ele ira definir uma cor oposta 
   const color = url[1] == "mercadorias" ? "white" : "rgb(47, 0, 255)";
   const color1 = url[1] == "mercadorias" ? "rgb(47, 0, 255)" : "white";
-  const {rodapeRef} = useContext(Context);
+  //useref para ir dereto para o rodape
+  const {rodapeRef} = useContext(Context)
   return (
     <>
       <footer
+      ref={rodapeRef}
         id="rodape"
         style={{ backgroundColor: `${color}`, color: `${color1}` }}
-        ref={rodapeRef}
       >
         <div className="content">
           <div className="tags">
@@ -41,16 +43,16 @@ export default function Rodape() {
             <strong>Siga-nos em nossas redes socias</strong>
             <div className="imagensRede">
               <Link to={""}>
-                <img src="../../public/images/instagram.png" alt="" />
+                <img src="/infolibre/public/images/instagram.png" alt="" />
               </Link>
               <Link to={""}>
-                <img src="../../public/images/facebook.png" alt="" />
+                <img src="/infolibre/public/images/facebook.png" alt="" />
               </Link>
               <Link to={""}>
-                <img src="../../public/images/zap.png" alt="" />
+                <img src="/infolibre/public/images/zap.png" alt="" />
               </Link>
               <Link to={""}>
-                <img src="../../public/images/tiktok.png" alt="" />
+                <img src="/infolibre/public/images/tiktok.png" alt="" />
               </Link>
             </div>
           </div>
