@@ -44,5 +44,50 @@
         "porcent":""
 
 
+    },
+    {
+        "id": "2-1",
+        "nome":"Life Detox",
+        "preco":"237,00",
+        "tipo":"saude",
+        "img":"/infolibre/images/produto-detox/detox2.png",
+        "descricao":"2 potes",
+        "conteudo":"sdsad a da da da dad asdds",
+        "desc":"1.667,00",
+        "link":"https://ev.braip.com/ref?pl=plar06ow&ck=chew8wl8&af=afiydz1xz2",
+        "sobre": "desconto",
+        "porcent":""
+
+
+    },
+    {
+        "id": "2-2",
+        "nome":"Life Detox",
+        "preco":"337,00",
+        "tipo":"saude",
+        "img":"/infolibre/images/produto-detox/detox3.png",
+        "descricao":"3 potes",
+        "conteudo":"sdsad a da da da dad asdds",
+        "desc":"1.667,00",
+        "link":"https://ev.braip.com/ref?pl=plageykv&ck=chew8wl8&af=afiydz1xz2",
+        "sobre": "desconto",
+        "porcent":""
+
+
+    },
+    {
+        "id": "2-3",
+        "nome":"Life Detox",
+        "preco":"637,00",
+        "tipo":"saude",
+        "img":"/infolibre/images/produto-detox/detox4.png",
+        "descricao":"5 potes",
+        "conteudo":"sdsad a da da da dad asdds",
+        "desc":"1.667,00",
+        "link":"https://ev.braip.com/ref?pl=pladerwz&ck=chew8wl8&af=afiydz1xz2",
+        "sobre": "desconto",
+        "porcent":""
+
+
     }
 ]

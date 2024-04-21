@@ -5,23 +5,31 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 export default function PageProduto() {
+
+  //pega localizacao da pagina atual
   const { pathname } = useLocation();
   const tudo = [...produtos, ...produtosDesconto];
+  //filtra conteudo pelo o id
   const conteudoPage = tudo.filter(
     (val) => `/mercadorias/${val.id}` == pathname
   );
+  //filtra produtos pelo o tipo, que nao seja do mesmo id da pagina
   const produto = produtos.filter(
     (val) => val.tipo == conteudoPage[0].tipo && val.id != conteudoPage[0].id
   );
+  //filtra produtos pelo o nome, que nao seja do mesmo id
   const produtoOfertas = produtosDesconto.filter(
     (val) => val.nome == conteudoPage[0].nome && val.id != conteudoPage[0].id
   );
-  const [image, setImage] = useState(conteudoPage[0].img);
-  //func
+  //setar imagem de a ser usado na pagina daquele produto
+  //func altera a imagem principal para a escolhida
+  const [image, setImage] = useState(null);
   function alterarImage(imagem) {
     setImage(imagem);
   }
-
+  
+//verifica qauntas diversidades de imagem tem do mesmo produto
+//e pega todas a imagens deversa daquele produto e faz um push no element
   const opImage = () => {
     const val = conteudoPage[0].img1;
     let element = [];
@@ -48,7 +56,7 @@ export default function PageProduto() {
         <div className="principal">
           <div className="imagem">
             <div
-              style={{ backgroundImage: `url(${image})` }}
+              style={{ backgroundImage: `url(${!image?conteudoPage[0].img:""})` }}
               className="img"
               onClick={() => alterarImage(conteudoPage[0].img)}
             ></div>
@@ -60,6 +68,7 @@ export default function PageProduto() {
                   className="tagsI tagIgame1"
                   onClick={() => alterarImage(conteudoPage[0].img)}
                 ></div>
+                {/*retorna todas as imagens obetidas pela funcao */}
                 {opImage()}
               </div>
             </div>
