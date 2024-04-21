@@ -3,9 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Carts({ produto }) {
   function render(){
-    useEffect(()=>{
-      window.location.reload()
-    },[])
+    window.scrollTo(0, 0);
   }
   let produtos = produto;
   return (

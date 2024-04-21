@@ -2,7 +2,8 @@ import Carts from "./Carts";
 import produtos from "../json/Produtos.json";
 import produtosDesconto from "../json/ProdutoDesconto.json";
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { Context } from "../hooks/CreateItens";
 
 export default function PageProduto() {
 
@@ -23,11 +24,13 @@ export default function PageProduto() {
   );
   //setar imagem de a ser usado na pagina daquele produto
   //func altera a imagem principal para a escolhida
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState(conteudoPage[0].img);
+  const [idAnterior, setIdAnterior] = useState("");
+
   function alterarImage(imagem) {
     setImage(imagem);
+    setIdAnterior(conteudoPage[0].id)
   }
-  
 //verifica qauntas diversidades de imagem tem do mesmo produto
 //e pega todas a imagens deversa daquele produto e faz um push no element
   const opImage = () => {
@@ -49,14 +52,15 @@ export default function PageProduto() {
     }
     return element;
   };
-
+//ref
+const {inicioRef} = useContext(Context)
   return (
     <>
-      <div className="container-fluid infoPageProduo">
+      <div className="container-fluid infoPageProduo" ref={inicioRef}>
         <div className="principal">
           <div className="imagem">
             <div
-              style={{ backgroundImage: `url(${!image?conteudoPage[0].img:""})` }}
+              style={{ backgroundImage: `url(${conteudoPage[0].id == idAnterior?image:conteudoPage[0].img})` }}
               className="img"
               onClick={() => alterarImage(conteudoPage[0].img)}
             ></div>
