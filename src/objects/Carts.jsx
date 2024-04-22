@@ -2,11 +2,11 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Carts({ produto }) {
-  function render(){
-    window.scrollTo(0, 0);
-    setTimeout(function(){
+  async function render() {
+    await window.scrollTo(0, 0);
+    setTimeout(function () {
       window.location.reload();
-    }, 1000)
+    }, 700);
   }
   let produtos = produto;
   return (
@@ -22,16 +22,16 @@ export default function Carts({ produto }) {
             >
               <div className="cart">
                 <div
-                className="imgCart"
+                  className="imgCart"
                   style={{ backgroundImage: `url(${val.img})` }}
                 ></div>
                 <div className="cart-body">
                   <h5 className="cart-text">{val.nome}</h5>
-                  <h3>R$ { val.preco}</h3>
+                  <h3>R$ {val.preco}</h3>
                   <span className="desconto">
                     {val.desc ? val.desc + " de desconto" : ""}
                   </span>
-                
+
                   <p>{val.descricao}</p>
                 </div>
               </div>
