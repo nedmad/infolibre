@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Context } from "../hooks/CreateItens";
 //tags sobre nossos produtos
 import infoproduto from  "../../public/images/abra-o-livro.png"
-import suplemento from  "../../public/images/suplemento.png"
 import produto from  "../../public/images/produtos.png"
 //pagamento
 import boleto from "../../public/images/pagamento/boleto.png";
@@ -27,10 +26,7 @@ export default function Body2() {
                   <img src={infoproduto} alt="" />
                   <span>Infoprodutos</span>
                 </li>
-                <li>
-                  <img src={suplemento} alt="" />
-                  <span>Suplementos</span>
-                </li>
+               
                 <li>
                   <img src={produto} alt="" />
                   <span>Produtos</span>

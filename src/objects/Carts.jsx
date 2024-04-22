@@ -1,13 +1,14 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Carts({ produto }) {
-  async function render() {
-    await window.scrollTo(0, 0);
+  function render() {
     setTimeout(function () {
       window.location.reload();
-    }, 700);
+    }, 100);
   }
+  window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+  });
   let produtos = produto;
   return (
     <>

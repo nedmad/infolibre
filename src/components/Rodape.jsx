@@ -46,18 +46,20 @@ export default function Rodape() {
           <div className="redesSocias">
             <strong>Siga-nos em nossas redes socias</strong>
             <div className="imagensRede">
-              <Link to={""}>
+              <a href={"https://www.instagram.com/infolibre_market?igsh=MWppNHQzdHBoOHBwNw%3D%3D&utm_source=qr"} target="_blank">
                 <img src={instagram} alt="" />
-              </Link>
-              <Link to={""}>
+              </a>
+              {/*
+              <a href={""}>
                 <img src={facebook} alt="" />
-              </Link>
-              <Link to={""}>
+              </a>
+               */}
+              <a href={"https://wa.me/5593999018693"} target="_blank">
                 <img src={zap}alt="" />
-              </Link>
-              <Link to={""}>
+              </a>
+              <a href={"https://www.tiktok.com/@femininabeauty?_t=8ljBh7hMQwo&_r=1"} target="_blank">
                 <img src={tiktok} alt="" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

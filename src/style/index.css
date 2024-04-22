@@ -255,6 +255,11 @@ footer .creditos {
   grid-template-columns: 1fr 2fr 1fr;
   gap: 40px;
 }
+.infoPageProduo .principal .info {
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 30px;
+}
 
 .imagem {
   margin-top: 10px;
@@ -455,6 +460,16 @@ footer .creditos {
   }
 }
 @media screen and (max-width: 562px) and (max-width: 402px) {
+  .redesSocias .imagensRede {
+    gap: 30px;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 0 !important;
+  }
+  .redesSocias .imagensRede a {
+    display: flex;
+    justify-content: center;
+  }
   .cart1,
   .cart2 {
     padding: 10px 10px 240px 10px;

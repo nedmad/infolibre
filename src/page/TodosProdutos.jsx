@@ -24,12 +24,7 @@ export default function TodosProdutos() {
         >
           <strong>Infoprodutos</strong>
         </Link>
-        <Link
-          to={"/mercadorias/suplementos"}
-          className={pathname == "/mercadorias/suplementos" ? "selecionado" : ""}
-        >
-          <strong>Saúde</strong>
-        </Link>
+       
       </div>
       <div className="conteudoFundo">
         <Outlet />

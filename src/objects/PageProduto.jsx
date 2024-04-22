@@ -89,6 +89,7 @@ export default function PageProduto() {
             <h1>{conteudoPage[0].nome}</h1>
             <div className="texto">
               <hr />
+              <p><h5>Descrição:</h5></p>
               <p>{conteudoPage[0].conteudo}</p>
             </div>
           </div>
@@ -97,8 +98,7 @@ export default function PageProduto() {
             <div className="contPagamento">
               <div className="infoPagamento">
                 <h2>R$ {conteudoPage[0].preco}</h2>
-                <p>Entrega GRÁTIS: 11 - 17 de Abril</p>
-                <p>Em estoque</p>
+                <p >Em estoque</p>
               </div>
               <Link to={conteudoPage[0].link} target="_blank">
                 <button className="btn btn-success ">Ir para compra</button>

@@ -1,10 +1,9 @@
-import { createBrowserRouter, createHashRouter } from "react-router-dom";
+import {createHashRouter } from "react-router-dom";
 import TodosProdutos from "../page/TodosProdutos";
 import Home from "../page/Home";
 import PaginaTotal from "../page/PaginaTotal";
 import Produtos from "../components/Produtos";
 import Inforodutos from "../components/Infoproduto";
-import Suplementos from "../components/Suplementos";
 import PaginaInicialProdutos from "../components/PaginaInicialProdutos";
 import PageProduto from "../objects/PageProduto";
 import CompraDe from "../components/politicas/CompraDe";
@@ -21,16 +20,16 @@ export const RouterMinho = createHashRouter([
         element: <Home />,
       },
       {
-        path:"/compra-devolução",
-        element:<CompraDe/>
+        path: "/compra-devolução",
+        element: <CompraDe />,
       },
       {
         path: "/termos-consentimento",
-        element:<Consentimento/>
+        element: <Consentimento />,
       },
       {
         path: "/formas-pagamento",
-        element:<FormaPagamento/>
+        element: <FormaPagamento />,
       },
       {
         path: "/mercadorias",
@@ -49,13 +48,9 @@ export const RouterMinho = createHashRouter([
             element: <Inforodutos />,
           },
           {
-            path: "/mercadorias/suplementos",
-            element: <Suplementos />,
-          },
-          {
             path: "/mercadorias/:id",
-            element: <PageProduto/>,
-          }
+            element: <PageProduto />,
+          },
         ],
       },
     ],
