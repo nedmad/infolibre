@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 export default function Carts({ produto }) {
   function render(){
     window.scrollTo(0, 0);
+    setTimeout(function(){
+      window.location.reload();
+    }, 1000)
   }
   let produtos = produto;
   return (

@@ -6,7 +6,6 @@ import { useContext, useState } from "react";
 import { Context } from "../hooks/CreateItens";
 
 export default function PageProduto() {
-
   //pega localizacao da pagina atual
   const { pathname } = useLocation();
   const tudo = [...produtos, ...produtosDesconto];
@@ -25,14 +24,15 @@ export default function PageProduto() {
   //setar imagem de a ser usado na pagina daquele produto
   //func altera a imagem principal para a escolhida
   const [image, setImage] = useState(conteudoPage[0].img);
+  //para armazendar o id do diretorio
   const [idAnterior, setIdAnterior] = useState("");
 
   function alterarImage(imagem) {
     setImage(imagem);
-    setIdAnterior(conteudoPage[0].id)
+    setIdAnterior(conteudoPage[0].id);
   }
-//verifica qauntas diversidades de imagem tem do mesmo produto
-//e pega todas a imagens deversa daquele produto e faz um push no element
+  //verifica qauntas diversidades de imagem tem do mesmo produto
+  //e pega todas a imagens deversa daquele produto e faz um push no element
   const opImage = () => {
     const val = conteudoPage[0].img1;
     let element = [];
@@ -52,15 +52,21 @@ export default function PageProduto() {
     }
     return element;
   };
-//ref
-const {inicioRef} = useContext(Context)
+  //ref
+  const { inicioRef } = useContext(Context);
   return (
     <>
       <div className="container-fluid infoPageProduo" ref={inicioRef}>
         <div className="principal">
           <div className="imagem">
+            {/*se o id atual foi igual ao id armazenado, ele retorna imagem ja setada,
+             caso nao, ele coloca a imagem inicial do id pertecente */}
             <div
-              style={{ backgroundImage: `url(${conteudoPage[0].id == idAnterior?image:conteudoPage[0].img})` }}
+              style={{
+                backgroundImage: `url(${
+                  conteudoPage[0].id == idAnterior ? image : conteudoPage[0].img
+                })`,
+              }}
               className="img"
               onClick={() => alterarImage(conteudoPage[0].img)}
             ></div>
@@ -82,7 +88,7 @@ const {inicioRef} = useContext(Context)
 
             <h1>{conteudoPage[0].nome}</h1>
             <div className="texto">
-            <hr />
+              <hr />
               <p>{conteudoPage[0].conteudo}</p>
             </div>
           </div>
@@ -94,15 +100,13 @@ const {inicioRef} = useContext(Context)
                 <p>Entrega GRÁTIS: 11 - 17 de Abril</p>
                 <p>Em estoque</p>
               </div>
-              <Link to={conteudoPage[0].link}
-              target="_blank"
-              >
+              <Link to={conteudoPage[0].link} target="_blank">
                 <button className="btn btn-success ">Ir para compra</button>
               </Link>
             </div>
           </div>
         </div>
-        <div className="relacionados" id="relaci" >
+        <div className="relacionados" id="relaci">
           {produtoOfertas == 0 ? (
             ""
           ) : (
