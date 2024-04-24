@@ -29,6 +29,7 @@ export default function Carts({ produto }) {
                 <div className="cart-body">
                   <h5 className="cart-text">{val.nome}</h5>
                   <h3>R$ {val.preco}</h3>
+                  <div><del className="precoAntigo">{val.precoAntigo}</del></div>
                   <span className="desconto">
                     {val.desc ? val.desc + " de desconto" : ""}
                   </span>

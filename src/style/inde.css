@@ -247,10 +247,6 @@ footer .creditos {
 .conteudoFundo .todosProdutos .cartPai .desconto {
   color: rgb(11, 234, 11);
 }
-.conteudoFundo .todosProdutos .cartPai .precoAntigo {
-  color: rgba(245, 67, 67, 0.959);
-  font-size: 20px;
-}
 
 /*****************************Page produto***********************************/
 .infoPageProduo .principal {
@@ -512,4 +508,4 @@ footer .creditos {
   padding: 70px 0;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=inde.css.map */
