@@ -6,10 +6,11 @@
         "preco":"297,00",
         "tipo":"produto",
         "img":"/images/produtos-femininos/rosa-amazonica3.webp",
+        "img1":["/images/produtos-femininos/rosa-amazonica1-img1.jpeg","/images/produtos-femininos/rosa-amazonica2-img1.jpg","/images/produtos-femininos/rosa-amazonica3-img1.webp"],
         "descricao":"3 potes",
         "conteudo":"Rosa amazonica Nutrição Essencial para a Saúde da Pele: é um suplemento alimentar formulado para oferecer suporte à saúde da pele, cabelos, unhas e articulações por meio do fornecimento de colágeno, uma proteína essencial encontrada no corpo humano. Este produto é projetado para auxiliar na manutenção da elasticidade da pele, promover a firmeza e prevenir os sinais de envelhecimento.",
-        "desc":"294,00",
-        "link":"https://ev.braip.com/ref?pl=plalyrxk&ck=chezlmgr&af=afi4vy6870",
+        "desc":"",
+        "link":"https://ev.braip.com/ref?pl=plagwxom&ck=chezlmgr&af=afi4vy6870",
         "sobre": "desconto",
         "porcent":""
 
@@ -21,9 +22,10 @@
         "preco":"397,00",
         "tipo":"produto",
         "img":"/images/produtos-femininos/rosa-amazonica5.webp",
+        "img1":["/images/produtos-femininos/rosa-amazonica1-img1.jpeg","/images/produtos-femininos/rosa-amazonica2-img1.jpg","/images/produtos-femininos/rosa-amazonica3-img1.webp"],
         "descricao":"5 potes",
         "conteudo":"Rosa amazonica Nutrição Essencial para a Saúde da Pele: é um suplemento alimentar formulado para oferecer suporte à saúde da pele, cabelos, unhas e articulações por meio do fornecimento de colágeno, uma proteína essencial encontrada no corpo humano. Este produto é projetado para auxiliar na manutenção da elasticidade da pele, promover a firmeza e prevenir os sinais de envelhecimento.",
-        "desc":"588,00",
+        "desc":"",
         "link":"https://ev.braip.com/ref?pl=plalyrxk&ck=chezlmgr&af=afi4vy6870 ",
         "sobre": "desconto",
         "porcent":""
@@ -33,12 +35,13 @@
     {
         "id": "1-3",
         "nome":"Rosa Amazônica",
-        "preco":"697,00",
+        "preco":"797,00",
         "tipo":"produto",
         "img":"/images/produtos-femininos/rosa-amazonica12.webp",
+        "img1":["/images/produtos-femininos/rosa-amazonica1-img1.jpeg","/images/produtos-femininos/rosa-amazonica2-img1.jpg","/images/produtos-femininos/rosa-amazonica3-img1.webp"],
         "descricao":"12 potes",
         "conteudo":"Rosa amazonica Nutrição Essencial para a Saúde da Pele: é um suplemento alimentar formulado para oferecer suporte à saúde da pele, cabelos, unhas e articulações por meio do fornecimento de colágeno, uma proteína essencial encontrada no corpo humano. Este produto é projetado para auxiliar na manutenção da elasticidade da pele, promover a firmeza e prevenir os sinais de envelhecimento.",
-        "desc":"1.667,00",
+        "desc":"",
         "link":"https://ev.braip.com/ref?pl=pla22mwz&ck=chezlmgr&af=afi4vy6870 ",
         "sobre": "desconto",
         "porcent":""
@@ -51,6 +54,7 @@
         "preco":"187,00",
         "tipo":"produto",
         "img":"/images/produto-detox/detox2.png",
+        "img1":["/images/produto-detox/detox1-img1.png", "/images/produto-detox/detox2-img1.webp"],
         "descricao":"COMPRE 2 LEVE 3",
         "conteudo":"Uma nutrição equilibrada tem um papel muito importante na qualidade de vida. Com o ritmo acelerado de muitas pessoas, às vezes, é muito difícil prestar atenção a todos os requisitos que o corpo precisa para estar saudável e forte. Neste sentido, os suplementos cumprem a função de complementar a alimentação e ajudam a obter as vitaminas, minerais, proteínas e outros componentes indispensáveis para o correto funcionamento do organismo. Este produto não substitui uma alimentação equilibrada e seu consumo deve ser orientado por nutricionista ou médico. Consumir este produto conforme a recomendação de ingestão diária constante da embalagem. ",
         "precoAntigo":"R$ 237,00",
@@ -67,6 +71,7 @@
         "preco":"238,00 ",
         "tipo":"produto",
         "img":"/images/produto-detox/detox3.png",
+        "img1":["/images/produto-detox/detox1-img1.png", "/images/produto-detox/detox2-img1.webp"],
         "descricao":"COMPRE 3 LEVE 5",
         "conteudo":"Uma nutrição equilibrada tem um papel muito importante na qualidade de vida. Com o ritmo acelerado de muitas pessoas, às vezes, é muito difícil prestar atenção a todos os requisitos que o corpo precisa para estar saudável e forte. Neste sentido, os suplementos cumprem a função de complementar a alimentação e ajudam a obter as vitaminas, minerais, proteínas e outros componentes indispensáveis para o correto funcionamento do organismo. Este produto não substitui uma alimentação equilibrada e seu consumo deve ser orientado por nutricionista ou médico. Consumir este produto conforme a recomendação de ingestão diária constante da embalagem. ",
         "precoAntigo":"R$ 337,00",
@@ -83,6 +88,7 @@
         "preco":"487,00",
         "tipo":"produto",
         "img":"/images/produto-detox/detox4.png",
+        "img1":["/images/produto-detox/detox1-img1.png", "/images/produto-detox/detox2-img1.webp"],
         "descricao":"COMPRE 5 LEVE 8 POR",
         "conteudo":"Uma nutrição equilibrada tem um papel muito importante na qualidade de vida. Com o ritmo acelerado de muitas pessoas, às vezes, é muito difícil prestar atenção a todos os requisitos que o corpo precisa para estar saudável e forte. Neste sentido, os suplementos cumprem a função de complementar a alimentação e ajudam a obter as vitaminas, minerais, proteínas e outros componentes indispensáveis para o correto funcionamento do organismo. Este produto não substitui uma alimentação equilibrada e seu consumo deve ser orientado por nutricionista ou médico. Consumir este produto conforme a recomendação de ingestão diária constante da embalagem. ",
         "desc":"",
@@ -91,5 +97,31 @@
         "porcent":""
 
 
+    },
+    {
+        "id": "4-1",
+        "nome":"Vita-pró-nobis",
+        "preco":"297,00 ",
+        "tipo":"produto",
+        "img":"/images/vita/vita2.webp",
+        "img1":["/images/vita/vita1-img1.png"],
+        "descricao":"pague 2 leve 4",
+        "precoAntigo":"R$ 350,00",
+        "desc":"R$ 53,00",
+        "conteudo":"O Vita Pro-Nóbis é um suplemento alimentar natural formulado para apoiar a saúde das articulações. Sua fórmula exclusiva inclui ingredientes como cúrcuma, ora-pro-nóbis e colágeno tipo II, conhecidos por seus benefícios na redução de inflamação, proteção das cartilagens e fortalecimento dos ossos. Este suplemento pode ser uma escolha inteligente para quem busca melhorar o conforto e a mobilidade das articulações.",
+        "link":"https://ev.braip.com/ref?pl=plarjp1g&ck=cheq76nd&af=afip16d5y4"
+    },
+    {
+        "id": "4-2",
+        "nome":"Vita-pró-nobis",
+        "preco":"397,00",
+        "tipo":"produto",
+        "img":"/images/vita/vita3.webp",
+        "img1":["/images/vita/vita1-img1.png"],
+        "descricao":"3 frascos + 3 gratis",
+        "precoAntigo":"R$ 450,00",
+        "desc":"R$ 53,00",
+        "conteudo":"O Vita Pro-Nóbis é um suplemento alimentar natural formulado para apoiar a saúde das articulações. Sua fórmula exclusiva inclui ingredientes como cúrcuma, ora-pro-nóbis e colágeno tipo II, conhecidos por seus benefícios na redução de inflamação, proteção das cartilagens e fortalecimento dos ossos. Este suplemento pode ser uma escolha inteligente para quem busca melhorar o conforto e a mobilidade das articulações.",
+        "link":"https://ev.braip.com/ref?pl=plaoj1x8&ck=cheq76nd&af=afip16d5y4"
     }
 ]
