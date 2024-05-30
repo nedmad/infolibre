@@ -2,7 +2,7 @@
 footer {
     padding: 30px;
     background-color: $colo-second;
-    color: $colo-second;
+    color: black !important;
 
 
     .content {
@@ -14,16 +14,18 @@ footer {
 
         //tags
         .tags{
+            
             span{
                 min-width: 240px;
                 display:grid;
                 grid-column: 1fr;
                 justify-content: center;
                 gap: 20px 0px;
+ 
                 
                 a{
+                    color: black !important;
                     text-decoration: none;
-                    color: $colo-second;
                     &:hover{
                         color: rgb(192, 203, 212);
                     }

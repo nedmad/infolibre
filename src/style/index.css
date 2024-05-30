@@ -9,16 +9,19 @@
 html,
 body {
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 253);
 }
 
 header {
   width: 100%;
+  background-color: rgb(248, 222, 179);
 }
 header #navbarNavDropdown {
   justify-content: end;
   padding: 0 50px;
-  color: rgb(21, 21, 20) !important;
+}
+header #navbarNavDropdown a {
+  color: black !important;
 }
 header .logo {
   height: 60px;
@@ -31,8 +34,8 @@ header img {
 
 footer {
   padding: 30px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  background-color: rgb(248, 222, 179);
+  color: black !important;
 }
 footer .content {
   display: grid;
@@ -49,8 +52,8 @@ footer .content .tags span {
   gap: 20px 0px;
 }
 footer .content .tags span a {
+  color: black !important;
   text-decoration: none;
-  color: rgb(255, 255, 255);
 }
 footer .content .tags span a:hover {
   color: rgb(192, 203, 212);
@@ -78,25 +81,78 @@ footer .creditos {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 253);
   text-align: center;
   min-height: 500px;
   min-width: 300px;
 }
 .corpo .filtro {
+  background-color: rgba(248, 222, 179, 0.39);
   width: 100%;
   height: 100%;
-  background-color: rgba(47, 0, 255, 0.676);
   padding: 160px 30px;
 }
-.corpo h1 {
-  max-width: 1200px;
-  margin: 20px auto;
+.corpo .conteudo {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.corpo .conteudo .carosel {
+  overflow: hidden;
+  cursor: grab;
+}
+.corpo .conteudo .carosel .inner {
+  display: flex;
+  width: 100%;
+}
+.corpo .conteudo .carosel .inner .item {
+  min-width: 410px;
+  height: 600px;
+}
+.corpo .conteudo .carosel .inner .item .cart {
+  width: 70%;
+  height: 50%;
+  border-radius: 10px;
+  pointer-events: none;
+}
+.corpo .conteudo .carosel .inner .item .cart img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  pointer-events: none;
 }
 .corpo .but {
   margin: 60px 0 200px 0;
+  animation: shake 2s infinite alternate;
+}
+@keyframes shake {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-30px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+.corpo .but button {
+  padding: 14px;
+  font-size: 23px;
+  border-radius: 7px;
+}
+.corpo .but button:hover {
+  background-color: rgb(248, 222, 179) !important;
+}
+.corpo .but button img {
+  max-width: 40px;
+  margin-left: 20px;
 }
 
+.bodyInfo {
+  color: black !important;
+}
 .bodyInfo .cartaz {
   max-width: 1000px;
   position: relative;
@@ -109,19 +165,18 @@ footer .creditos {
 }
 .bodyInfo .cartaz .cartazBloco1,
 .bodyInfo .cartaz .cartazBloco2 {
-  color: rgb(255, 255, 255);
   padding: 40px;
   box-shadow: 4px 4px 20px black;
   text-align: left;
   min-height: 300px;
 }
 .bodyInfo .cartaz .cartazBloco1 {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(248, 222, 179);
   border-radius: 10px 0px 0px 10px;
   color: black;
 }
 .bodyInfo .cartaz .cartazBloco2 {
-  background-color: rgb(47, 0, 255);
+  background-color: rgb(255, 255, 253);
   border-radius: 0 10px 10px 0;
 }
 .bodyInfo .cartaz .cartazBloco2 img {
@@ -129,9 +184,6 @@ footer .creditos {
 }
 .bodyInfo .cartaz .cartazBloco2 li {
   margin-top: 20px;
-}
-.bodyInfo .cartaz .cartazBloco2 li span {
-  margin-left: 10px;
 }
 .bodyInfo .comoTrabalhamos {
   text-align: center;
@@ -145,7 +197,6 @@ footer .creditos {
 .bodyInfo .comoTrabalhamos h1 {
   max-width: 1200px;
   margin: 20px auto;
-  color: rgb(47, 0, 255);
 }
 .bodyInfo .infoCarts {
   margin-top: 120px;
@@ -160,7 +211,6 @@ footer .creditos {
   width: 100%;
   max-width: 530px;
   background-color: white;
-  color: rgb(47, 0, 255);
   border-radius: 10px;
   padding: 30px 40px 100px 40px;
   box-shadow: 4px 4px 40px black;
@@ -189,7 +239,7 @@ footer .creditos {
 
 /*-------------------------------------Todos os Produtos*/
 .caminhos {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(248, 222, 179);
   display: flex;
   justify-content: center;
   gap: 3px;
@@ -200,17 +250,14 @@ footer .creditos {
   padding: 10px;
   border-radius: 3px;
   text-align: center;
-  color: rgb(47, 0, 255);
+  color: black;
 }
 .caminhos .selecionado {
-  border-bottom: solid rgb(47, 0, 255);
+  border-bottom: solid rgb(255, 255, 253);
 }
 
 .conteudoFundo {
-  background-color: rgb(47, 0, 255);
-}
-.conteudoFundo .todosProdutos {
-  color: rgb(47, 0, 255);
+  background-color: rgb(255, 255, 253);
 }
 .conteudoFundo .todosProdutos .ProdutosMePro {
   display: grid;
@@ -220,7 +267,7 @@ footer .creditos {
   gap: 40px 0;
 }
 .conteudoFundo .todosProdutos .ProdutosMePro h3 {
-  color: rgb(255, 255, 255);
+  color: black;
 }
 .conteudoFundo .todosProdutos .cartPai {
   width: 260px;
@@ -229,10 +276,10 @@ footer .creditos {
   padding: 40px 30px;
   border-radius: 20px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 .conteudoFundo .todosProdutos .cartPai:hover {
-  box-shadow: 3px 3px 10px rgb(255, 255, 255);
+  box-shadow: 3px 3px 10px rgb(248, 222, 179);
 }
 .conteudoFundo .todosProdutos .cartPai .imgCart {
   width: 100%;
@@ -254,7 +301,7 @@ footer .creditos {
 
 /*****************************Page produto***********************************/
 .infoPageProduo .principal {
-  color: rgb(255, 255, 255);
+  color: black;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 40px;
@@ -313,7 +360,7 @@ footer .creditos {
   margin-top: 100px;
 }
 .relacionados h3 {
-  color: rgb(255, 255, 255) !important;
+  color: black;
 }
 
 .pagamento button {
@@ -322,8 +369,8 @@ footer .creditos {
 
 footer {
   padding: 30px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(255, 255, 255);
+  background-color: rgb(248, 222, 179);
+  color: black !important;
 }
 footer .content {
   display: grid;
@@ -340,8 +387,8 @@ footer .content .tags span {
   gap: 20px 0px;
 }
 footer .content .tags span a {
+  color: black !important;
   text-decoration: none;
-  color: rgb(255, 255, 255);
 }
 footer .content .tags span a:hover {
   color: rgb(192, 203, 212);
@@ -446,12 +493,12 @@ footer .creditos {
     display: block !important;
   }
   .cartazBloco1 {
-    background-color: rgb(47, 0, 255);
+    background-color: rgb(255, 255, 253);
     border-radius: 10px 10px 0px 0px !important;
     color: black;
   }
   .cartazBloco2 {
-    background-color: rgb(47, 0, 255);
+    background-color: rgb(255, 255, 253);
     border-radius: 0px 0px 10px 10px !important;
   }
   .ProdutosMePro {
@@ -465,10 +512,8 @@ footer .creditos {
 }
 @media screen and (max-width: 562px) and (max-width: 402px) {
   .redesSocias .imagensRede {
-    gap: 30px;
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 0 !important;
+    display: flex !important;
+    gap: 10px !important;
   }
   .redesSocias .imagensRede a {
     display: flex;
@@ -507,8 +552,8 @@ footer .creditos {
   }
 }
 .termos {
-  background-color: rgb(47, 0, 255);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 253);
+  color: black;
   padding: 70px 0;
 }
 

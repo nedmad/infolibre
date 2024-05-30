@@ -136,10 +136,8 @@
             
             .imagensRede{
                 
-                gap: 30px;
-                display: grid !important;
-                grid-template-columns: repeat(2,1fr);
-                gap: 30px 0 !important;
+                display: flex !important;
+                gap: 10px !important;
 
                 a{
                     display: flex;

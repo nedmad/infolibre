@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { Context } from "../hooks/CreateItens";
 import instagram from "../../public/images/instagram.png"
-import facebook from "../../public/images/facebook.png"
 import zap from "../../public/images/zap.png"
 import tiktok from "../../public/images/tiktok.png"
 
@@ -10,8 +9,7 @@ export default function Rodape() {
   const { pathname } = useLocation();
   const url = pathname.split("/");
   //Se estiver no diretorio mercadoria, ele ira definir uma cor oposta 
-  const color = url[1] == "mercadorias" ? "white" : "rgb(47, 0, 255)";
-  const color1 = url[1] == "mercadorias" ? "rgb(47, 0, 255)" : "white";
+  const color1 = url[1] == "mercadorias" ? "black" : "white";
   //useref para ir dereto para o rodape
   const {rodapeRef} = useContext(Context)
   return (
@@ -19,7 +17,7 @@ export default function Rodape() {
       <footer
       ref={rodapeRef}
         id="rodape"
-        style={{ backgroundColor: `${color}`, color: `${color1}` }}
+        style={{color: `${color1}` }}
       >
         <div className="content">
           <div className="tags">

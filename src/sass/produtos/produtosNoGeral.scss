@@ -12,7 +12,7 @@
         padding: 10px;
         border-radius: 3px;
         text-align: center;
-        color: $color-primary;
+        color: black;
     
     
     }
@@ -29,7 +29,6 @@
 
 
     .todosProdutos {
-        color: $color-primary;
 
 
         .ProdutosMePro {
@@ -39,8 +38,9 @@
             justify-items: center;
             gap: 40px 0;
 
+
             h3 {
-                color: $colo-second;
+                color: black;
             
             
             }
@@ -59,7 +59,8 @@
             padding: 40px 30px;
             border-radius: 20px;
             text-decoration: none;
-            color: $colo-second;
+            color: black;
+
 
             &:hover {
                 box-shadow: 3px 3px 10px $colo-second;
