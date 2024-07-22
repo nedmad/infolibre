@@ -8,12 +8,12 @@ export default function HomeQuiz(){
     let [teste, setTeste] = useState(0);
     var [but, setBut] = useState('Proximo');
     function Soma(){
-        setTeste(teste <=7?teste+1:8);
-        if(teste == 6){
+        setTeste(teste <=8?teste+1:9);
+        if(teste == 7){
            setBut('Finalizar');
 
         }
-        if(teste == 7){
+        if(teste == 8){
            let a = document.querySelector(".but a");
            a.href = "https://pay.kiwify.com.br/4X4vX5q";
 
@@ -23,13 +23,14 @@ export default function HomeQuiz(){
         <>
         <div className="container">
         <div className="quiz">
-          <h2>Perguntas que fará você mudar sua mentalidade, e fazer sua vida mudar</h2>
-            {
-                teste <= 7?
+          <h2>Responda as perguntas e será redirecionado para a página de compra automaticamente</h2>
+           
             <div className="questions">
               <h5>
                 {title[teste]}
               </h5>
+              {
+                teste <= 7?
               <div className="perg">
                 <div className="form-check">
                   <input
@@ -68,8 +69,9 @@ export default function HomeQuiz(){
                   </label>
                 </div>
               </div>
-            </div> /*Fim questions */
             :""}
+
+            </div> {/*Fim questions */}
 
           <div className="but">
             <a onClick={Soma} className="btn ">
