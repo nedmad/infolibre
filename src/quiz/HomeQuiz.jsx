@@ -1,36 +1,31 @@
-import { useContext, useState } from "react"
-import { Contexts } from "./CreateQuiz"
+import { useContext, useState } from "react";
+import { Contexts } from "./CreateQuiz";
 
-
-
-export default function HomeQuiz(){
-    let {title} = useContext(Contexts);
-    let [teste, setTeste] = useState(0);
-    var [but, setBut] = useState('Proximo');
-    function Soma(){
-        setTeste(teste <=8?teste+1:9);
-        if(teste == 7){
-           setBut('Finalizar');
-
-        }
-        if(teste == 8){
-           let a = document.querySelector(".but a");
-           a.href = "https://pay.kiwify.com.br/4X4vX5q";
-
-        }
+export default function HomeQuiz() {
+  let { title } = useContext(Contexts);
+  let [teste, setTeste] = useState(0);
+  var [but, setBut] = useState("Proximo");
+  function Soma() {
+    setTeste(teste <= 8 ? teste + 1 : 9);
+    if (teste == 7) {
+      setBut("Finalizar");
     }
-    return(
-        <>
-        <div className="container">
+    if (teste == 8) {
+      let a = document.querySelector(".but a");
+      a.href = "https://pay.kiwify.com.br/4X4vX5q";
+    }
+  }
+  return (
+    <>
+      <div className="container">
         <div className="quiz">
-          <h2>Responda as perguntas e será redirecionado para a página de compra automaticamente</h2>
-           
-            <div className="questions">
-              <h5>
-                {title[teste]}
-              </h5>
-              {
-                teste <= 7?
+          <h2>
+            Responda as perguntas e será redirecionado para a página de compra
+            automaticamente
+          </h2>
+          <div className="questions">
+            <h5>{title[teste]}</h5>
+            {teste <= 7 ? (
               <div className="perg">
                 <div className="form-check">
                   <input
@@ -69,10 +64,15 @@ export default function HomeQuiz(){
                   </label>
                 </div>
               </div>
-            :""}
-
-            </div> {/*Fim questions */}
-
+            ) :''}
+          </div>
+          {teste>8?(
+             (
+              <div  className="spinner-border text-info" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            )
+          ):''}
           <div className="but">
             <a onClick={Soma} className="btn ">
               {but}
@@ -82,6 +82,6 @@ export default function HomeQuiz(){
 
         {/*Fim quiz */}
       </div>
-      </>
-    )
+    </>
+  );
 }
