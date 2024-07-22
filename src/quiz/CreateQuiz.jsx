@@ -12,7 +12,7 @@ export default function CreateQuiz({ children }) {
         "6- Gostaria de saber como utilizar as redes sociais de forma eficaz para atrair clientes e aumentar suas vendas online?",
         "7- Acredita que uma formação estruturada e passo a passo pode acelerar significativamente seu sucesso financeiro online?",
         "8- Está pronto para dar o próximo passo e transformar seu tempo livre em uma oportunidade de negócio lucrativa através da internet?",
-        "Se você chegou aqui, então você faz parte dos 1% de 100%, então parabéns! A maioria não está disposta a fazer o que você faz para ter a vida dos sonhos. Você está a um passo de dar uma volta por cima na sua vida. Ah, e muito obrigado pela atenção, se veremos em breve!",
+        "Se você chegou aqui, você faz parte dos 1% de 100%, então parabéns! A maioria não está disposta a fazer o que você faz para ter a vida dos sonhos. Você está a um passo de dar uma volta por cima na sua vida. Ah, e muito obrigado pela atenção, se veremos em breve!",
       ];
 
   const items = {title};
